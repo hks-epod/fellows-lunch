@@ -1,0 +1,6 @@
+.bgimage {
+  background-image: url('../images/manatee.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 400px;
+}
