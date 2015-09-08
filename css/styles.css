@@ -2,5 +2,9 @@
   background-image: url('../images/manatee.jpg');
   background-position: center center;
   background-size: cover;
-  height: 400px;
+  height: 200px;
+}
+
+.welcome h1, h2 {
+	color: #F0FFFF;
 }

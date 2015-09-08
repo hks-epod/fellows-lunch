@@ -15,18 +15,108 @@
 <body>
 
 <header class="bgimage">
-  <div class="container">
+  <div class="container welcome">
+  <section class="col-sm-6">
     <h1>Coming soon</h1>  
-    <h2>(Don't panic)</h2>
+    <h2>(don't panic)</h2>
   </div>
 </header>  
 
+<!-- Summary -->
 <div class="container-fluid">
-	<p>Hi. This is going to be the website for the <a href="http://epod.cid.harvard.edu/" target="_blank">EPoD</a> Research Fellows (and Friends) Lunch. Check back soon - and you'll see more stuff than just a <a href="http://calmingmanatee.com/">Calming Manatee</a>.</p>
+<div class="container">
+  <a href="#" class="btn btn-default btn-lg active" role="button">About</a>
+  <a href="#" class="btn btn-default btn-lg" role="button">Calendar</a>
+  <a href="#" class="btn btn-default btn-lg" role="button">Topics</a>
+  <a href="#" class="btn btn-default btn-lg" role="button">Resources</a>
+
+  <button class="btn btn-primary">Primary</button>
+  <button class="btn btn-success">Success</button>
+  <button class="btn btn-info">Info</button>
+  <button class="btn btn-warning">Warning</button>
+  <button class="btn btn-danger">Danger</button>
+  <button class="btn btn-default" disabled="disabled">Not an option</button>
+  <a href="#" class="btn btn-default btn-lg" disabled>Link not an option</a>
+  <button class="btn btn-danger btn-block">Don't click here!</button>
+
 </div>
 
+  
+
+	<p class="lead">Hi. This is going to be the website for the <abbr title="Evidence for Policy Design" class="initialism"><a href="http://epod.cid.harvard.edu/" target="_blank">EPoD</a></abbr> Research Fellows (and Friends) Lunch. Check back soon - and you'll see more stuff than just a <a href="http://calmingmanatee.com/">Calming Manatee</a>.</p>
+
+  <p>Get started with GitHub by using this in Terminal:</p>
+  <pre>
+    git commit -m "Some insightful comment."</pre>
+</div>
+
+<!-- Events -->
+<div class="container">
+<div class="row">
+<h3>Events</h3>
+<dl class="dl-horizontal">
+  <dt>EPoD-<abbr title="CID Growth Lab" class="initalism">GL</abbr> Lunch</dt>
+  <dd><em>Monthly</em>. This will be a hands-on technical workshop with our neighbors upstairs, <a href="http://www.hks.harvard.edu/centers/cid/programs/growth-lab" target="_blank">The Growth Lab</a>. Each month, alternating, we present a paper from our field (1 hour) and then do a practical exercise together (1 hour). Practical exercises might include: replicating analyses, creating data visualizations or maps, and so on. We'll replicate analyses, such as <var>x = y</var>.</dd>
+  
+  <dt>F(AF)T</dt>
+  <dd><em>Monthly</em>. Fellows (and Friends) Tea. Come one, come all! A randomista get-together, for people working across our organizations: J-PAL, IPA, EPoD, HKS, HBS, other acronyms. More informal. More casual. More manatees. We'll learn stuff like what is a <code>for</code> loop in Python look like, or what the <code>&lt;em&gt;</code> is. We'll also learn about the efficiency of <kbd>CTRL+C</kbd> and other keyboard shortcuts.</dd>
+
+  <dt>Dev seminar</dt>
+  <dd><em>Weekly</em>. Harvard in the fall, MIT in the spring. <a href="http://economics.mit.edu/events/Dev-Environ">Link.</a></dd>
+</dl>
+</section>
+</div> <!-- Row -->
+</div> <!-- Container -->
+
+<div class="container">
+  <div class="row">
+    <section class="col-xs-12">
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">EPoD/Growth Lab Lunch</th>
+            <td>monthly</td>
+            <td>This will be a hands-on technical workshop with our neighbors upstairs, <a href="http://www.hks.harvard.edu/centers/cid/programs/growth-lab" target="_blank">The Growth Lab</a>. Each month, alternating, we present a paper from our field (1 hour) and then do a practical exercise together (1 hour). Practical exercises might include: replicating analyses, creating data visualizations or maps, and so on. We'll replicate analyses, such as <var>x = y</var>.</td>
+          </tr>
+          <tr>
+            <th scope="row">F(AF)T</th>
+            <td>monthly</td>
+            <td>Fellows (and Friends) Tea. Come one, come all! A randomista get-together, for people working across our organizations: J-PAL, IPA, EPoD, HKS, HBS, other acronyms. More informal. More casual. More manatees. We'll learn stuff like what is a <code>for</code> loop in Python look like, or what the <code>&lt;em&gt;</code> is. We'll also learn about the efficiency of <kbd>CTRL+C</kbd> and other keyboard shortcuts.</td>
+          </tr>
+          <tr>
+            <th scope="row">MIT-Harvard Development Seminar</th>
+            <td>weekly</td>
+            <td>Harvard in the fall, MIT in the spring. <a href="http://economics.mit.edu/events/Dev-Environ">Link.</a></td>
+          </tr>
+          <tr>
+        </tbody>
+      </table>
+
+    </section>
+  </div><!-- row -->   
+</div><!-- content container -->
 
 
+
+<!-- Google Analytics tracking -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67003611-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
