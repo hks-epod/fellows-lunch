@@ -8,3 +8,10 @@
 .welcome h1, h2 {
 	color: #F0FFFF;
 }
+
+@media (max-width: 767px) {
+	.img-responsive {
+		max-width: 50%;
+		min-width: 300px;
+	}
+}
