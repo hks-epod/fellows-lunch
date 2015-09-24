@@ -1,12 +1,12 @@
 .bgimage {
-  background-image: url('../images/manatee.jpg');
+  background-image: url('../images/harvard.jpg');
   background-position: center center;
   background-size: cover;
-  height: 200px;
+  height: 250px;
 }
 
 .welcome h1, h2 {
-	color: #F0FFFF;
+	color: yellow;
 }
 
 @media (max-width: 767px) {
