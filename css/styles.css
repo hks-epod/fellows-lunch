@@ -5,7 +5,7 @@
   height: 250px;
 }
 
-.welcome h1, h2 {
+h1.welcome, .welcome:h2 {
 	color: yellow;
 }
 

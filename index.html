@@ -9,7 +9,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
-	<title>EPoD: Fellows Lunch</title>
+	<title>EPoD: F(AF)L</title>
 
 </head>
 <body>
@@ -17,35 +17,60 @@
 <header class="bgimage">
   <div class="container welcome">
   <section class="col-sm-6">
-    <h1>Coming soon</h1>  
-    <h2>(don't panic)</h2>
   </div>
 </header>  
 
-<!-- Nav bar -->
-<nav class="navbar navbar-inverse">
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand block-inline" href="#">
+        <img alt="EPoD logo" src="images/logo.png" height="35px">
+      </a>
+    </div>
 
-<div class="container">
-  <a href="about.html" class="btn btn-default navbar-btn" role="button">About</a>
-  <a href="map.html" class="btn btn-default navbar-btn" role="button">Map</a>
-  <a href="#" class="btn btn-default navbar-btn" role="button">Calendar</a>
-  <a href="#" class="btn btn-default navbar-btn" role="button">Past topics</a>
-  <a href="resources.html" class="btn btn-default navbar-btn" role="button">Resources</a>
-  </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="collapsemenu">
 
+    <!-- Main navbar, LHS -->
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">About <span class="sr-only">(current)</span></a></li>
+        <li><a href="calendar.html">Calendar of events</a></li>
+        <li><a href="map.html">How to find us</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Feedback forms <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="https://docs.google.com/forms/d/1Vsx1EvhnqYviZv8eEVTAOf-Fdm0wxuKjoKqXgY3iNUU/viewform?usp=send_form" target="_blank">I want to teach something.</a></li>
+          <li><a href="https://docs.google.com/forms/d/1eb2xAQyxroDYJJsJ55U1RETarnZYJowmCHjGPWEZaEg/viewform?usp=send_form" target="_blank">I want to learn something.</a></li>
+          <li><a href="mailto:angela_ambroz@hks.harvard.edu">I want to give feedback on a F(AF)L.</a></li>
+        </ul>
+        </li>
+        <li class="dropdown">
+          <a href="resources.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources to learn more <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="resources.html#python">Python</a></li>
+            <li><a href="resources.html#gis">GIS</a></li>
+            <li><a href="resources.html#css">HTML/CSS</a></li>
+            <li><a href="resources.html#d3js">d3.js</a></li>
+            <li><a href="resources.html#stata">Stata</a></li>
+            <li><a href="resources.html#phd">Applying for a PhD</a></li>
+            <li><a href="resources.html#api">APIs</a></li>
+            <li><a href="https://www.khanacademy.org/coach-res/reference-for-coaches/how-to/v/you-can-learn-anything" target="_blank">I just need a pep talk</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
 </nav>
-<!-- End nav bar -->
-
-
-  <button class="btn btn-primary">Primary</button>
-  <button class="btn btn-success">Success</button>
-  <button class="btn btn-info">Info</button>
-  <button class="btn btn-warning">Warning</button>
-  <button class="btn btn-danger">Danger</button>
-  <button class="btn btn-default" disabled="disabled">Not an option</button>
-  <!-- <a href="#" class="btn btn-default btn-lg" disabled>Link not an option</a> -->
-  <!-- <button class="btn btn-danger btn-block">Don't click here!</button> -->
-
+<!-- /Navbar -->
   
   <!-- Funny xomix -->
   <div class="container">

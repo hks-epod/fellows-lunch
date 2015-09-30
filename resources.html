@@ -18,10 +18,61 @@
 <header class="bgimage">
   <div class="container welcome">
   <section class="col-sm-6">
-    <h1>Coming soon</h1>  
-    <h2>(don't panic)</h2>
   </div>
-</header>  
+</header> 
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand block-inline" href="#">
+        <img alt="EPoD logo" src="images/logo.png" height="35px">
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="collapsemenu">
+
+    <!-- Main navbar, LHS -->
+      <ul class="nav navbar-nav">
+        <li><a href="about.html">About <span class="sr-only">(current)</span></a></li>
+        <li><a href="calendar.html">Calendar of events</a></li>
+        <li><a href="map.html">How to find us</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Feedback forms <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="https://docs.google.com/forms/d/1Vsx1EvhnqYviZv8eEVTAOf-Fdm0wxuKjoKqXgY3iNUU/viewform?usp=send_form" target="_blank">I want to teach something.</a></li>
+          <li><a href="https://docs.google.com/forms/d/1eb2xAQyxroDYJJsJ55U1RETarnZYJowmCHjGPWEZaEg/viewform?usp=send_form" target="_blank">I want to learn something.</a></li>
+          <li><a href="mailto:angela_ambroz@hks.harvard.edu">I want to give feedback on a F(AF)L.</a></li>
+        </ul>
+        </li>
+        <li class="dropdown active">
+          <a href="resources.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources to learn more <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="resources.html#python">Python</a></li>
+            <li><a href="resources.html#gis">GIS</a></li>
+            <li><a href="resources.html#css">HTML/CSS</a></li>
+            <li><a href="resources.html#d3js">d3.js</a></li>
+            <li><a href="resources.html#stata">Stata</a></li>
+            <li><a href="resources.html#phd">Applying for a PhD</a></li>
+            <li><a href="resources.html#api">APIs</a></li>
+            <li><a href="https://www.khanacademy.org/coach-res/reference-for-coaches/how-to/v/you-can-learn-anything" target="_blank">I just need a pep talk</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- /Navbar -->
+
 
 <div class="container">
 	<h1>Ready to learn more?</h1>
@@ -31,27 +82,44 @@
   <a href="#python" class="btn btn-default btn-lg active" role="button">Python</a>
   <a href="#gis" class="btn btn-default btn-lg" role="button">GIS</a>
   <a href="#git" class="btn btn-default btn-lg" role="button">git/GitHub</a>
+  <a href="#css" class="btn btn-default btn-lg" role="button">HTML/CSS</a>
+  <a href="#d3js" class="btn btn-default btn-lg" role="button">d3.js</a>
   <a href="#stata" class="btn btn-default btn-lg" role="button">Stata</a>
   <a href="#phd" class="btn btn-default btn-lg" role="button">PhD apps</a>
+  <a href="#api" class="btn btn-default btn-lg" role="button">APIs</a>
   </div>
 
-  <div class="container">
-  <h2 id="python"><small>Python</small></h2>
-  <ul class="list-inline">
-    <li><a href="files/Python_Angela_NH2015.pdf" target="_blank"><mark>lecture slides (pdf)</mark></a></li>
-    <li><a href="files/Python_goodies_NH2015.zip"><mark>example code (zip)</mark></a></li>
-  </ul>
-  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, minima, impedit. Quibusdam, officia, fugit! Eius eligendi iure quasi praesentium quas corrupti veniam, quae eos, eaque, pariatur et delectus, explicabo temporibus.</p>
 
-  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla reiciendis commodi temporibus iure repellat magni maxime quaerat quam neque! Sequi, laborum aspernatur expedita quisquam similique voluptatum ea possimus, reiciendis qui.</p>
+  <div class="container">
+  <div><h1 id="python"><small>Python</small></h1></div>
+  	<p>Python is a popular, multi-purpose programming language. Its light, simple style makes it great for beginners, and its <a href="https://wiki.python.org/moin/UsefulModules">giant ecosystem of libraries</a> makes it the true digital multi-tool. Use it to scrape websites, analyze GIS data, run regressions, edit audio/video, paint, and more.</p>
+        <dl class="dl-horizontal">
+      <dt>F(AF)L</dt>
+      <dd><mark>Web scraping in Python - Friday, 9 Oct, 4pm.</mark></dd>
+      <dt>Lecture slides</dt>
+      <dd><a href="files/Python_Angela_NH2015.pdf">Intro to Python</a> (.pdf), more coming soon</dd>
+      <dt>Example code</dt>
+      <dd><ul class="list-unstyled">
+        <li><pre>for name in ["EPoD", "JPAL", "IPA"]:
+        print "Hello, " + name + "!"</pre></li>
+        <li><a href="files/Python_goodies_NH2015.zip">Bundle of example programs</a> (.zip), more coming soon</li>
+      </ul></dd>
+      <dt>Who uses this?</dt>
+      <dd><a href="https://github.com/angelaambroz">Angela</a>, <a href="https://github.com/edodge">Eric</a>, <a href="http://www.povertyactionlab.org/loza">Francine</a>, <a href="http://epod.cid.harvard.edu/people/mehmet-seflek">Mehmet</a></dt>
+      <dd>Data cleaning and analysis (<a href="">pandas</a>, <a href="">statsmodels</a>, <a href="">numpy</a>). Automating repretitive tasks on your computer. Scraping the internet (<a href="">BeautifulSoup</a>), using APIs (<a href="">requests</a>).</dd>
+      <dt>Tutorials</dt>
+      <dd><ul class="list-unstyled">
+        <li><a href="https://www.udacity.com/course/programming-foundations-with-python--ud036">Programming Foundations with Python</a></li>
+        <li><a href="http://learnpythonthehardway.org/book/">Learn Python the Hard Way</a></li>
+        <li><a href="https://www.codecademy.com/tracks/python">Codecademy - Python track</a></li>
+        <li><a href="https://automatetheboringstuff.com/">Automate the Boring Stuff with Python</a></li>
+        <li><a href="http://www.newcoder.io/">newCoder.io</a></li>
+      </ul></dd>
+    </dl>
   </div>
 
   <div class="container">
   <h2 id="gis"><small>GIS</small></h2>
-    <ul class="list-inline">
-    <li><mark>lecture slides (coming soon)</mark></li>
-    <li><mark>example code (coming soon)</mark></li>
-  </ul>
   	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, minima, impedit. Quibusdam, officia, fugit! Eius eligendi iure quasi praesentium quas corrupti veniam, quae eos, eaque, pariatur et delectus, explicabo temporibus.</p>
   	
   	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla reiciendis commodi temporibus iure repellat magni maxime quaerat quam neque! Sequi, laborum aspernatur expedita quisquam similique voluptatum ea possimus, reiciendis qui.</p>
@@ -61,21 +129,21 @@
 
   <div class="container">
   <h2 id="git"><small>Git and GitHub</small></h2>
-      <ul class="list-inline">
-    <li><mark>lecture slides (coming soon)</mark></li>
-    <li><mark>example code (coming soon)</mark></li>
-  </ul>
   	<p><code>git</code> is a very simple programming language for version control, run from the command line. <a href="https://github.com/">GitHub</a> is a popular website where you can use <code>git</code> to collaborate with others on code-based projects. It's basically <code>git</code> + the internet. Your code is hosted in online repositories ("repos") which can be public (free) or private (not free). You normally don't store data, Word documents, or other stuff on GitHub. It works best with plain text files.</p> 
     <dl class="dl-horizontal">
       <dt>F(AF)L</dt>
-      <dd>None yet.</dd>
+      <dd>None yet. <small><a href="https://docs.google.com/forms/d/1Vsx1EvhnqYviZv8eEVTAOf-Fdm0wxuKjoKqXgY3iNUU/viewform?usp=send_form">Interested in teaching?</a></small></dd>
+      <dt>Example code</dt>
+      <dd>
+        <pre>git commit -m "This is my first commit."</pre>
+        </dd>
       <dt>Who uses this?</dt>
-      <dd><a href="https://github.com/angelaambroz">Angela</a>, <a href="https://github.com/NilsEnevoldsen">Nils</a>, <a href="https://github.com/edodge">Eric</a></dd>
+      <dd><a href="https://github.com/angelaambroz">Angela</a>, <a href="https://github.com/NilsEnevoldsen">Nils</a>, <a href="https://github.com/edodge">Eric</a>, <a href="https://github.com/boyercb">Chris</a></dd>
       <dt>What's it useful for?</dt>
       <dd>Collaborating on .do files, or any other plain text/coding files (.html, .py, .js). There is tell of a <a href="http://stackoverflow.com/a/6190412"><code>git</code> + LaTeX workflow</a>.</dd>
       <dt>Tutorials</dt>
       <dd><ul class="list-unstyled">
-        <li><a href="https://try.github.io/levels/1/challenges/1">try Git in 15 minutes</a></li>
+        <li><a href="https://try.github.io/levels/1/challenges/1">Try git in 15 minutes</a></li>
         <li><a href="https://rogerdudler.github.io/git-guide/">git - the simple guide</a></li>
         <li><a href="https://guides.github.com/activities/hello-world/">"Hello, world!" in GitHub</a></li>
         <li><a href="https://www.udacity.com/wiki/ud775">How to use git and GitHub (wiki)</a></li>
@@ -86,23 +154,92 @@
 
   <div class="container">
   <h2 id="stata"><small>Stata</small></h2>
-      <ul class="list-inline">
-    <li><mark>lecture slides (coming soon)</mark></li>
-    <li><mark>example code (coming soon)</mark></li>
-  </ul>
-  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, minima, impedit. Quibusdam, officia, fugit! Eius eligendi iure quasi praesentium quas corrupti veniam, quae eos, eaque, pariatur et delectus, explicabo temporibus.</p>
+  	   <p>Our bread and butter.</p> 
+    <dl class="dl-horizontal">
+      <dt>F(AF)L</dt>
+      <dd>None yet. <small><a href="https://docs.google.com/forms/d/1Vsx1EvhnqYviZv8eEVTAOf-Fdm0wxuKjoKqXgY3iNUU/viewform?usp=send_form">Interested in teaching?</a></small></dd>
+      <dt>Resources</dt>
+      <dd><ul class="list-unstyled">
+          <li><a href="https://groups.google.com/forum/?utm_source=digest&utm_medium=email#!forum/randomhelp/topics">Random Help</a></li>
+          <li><a href="http://www.statalist.org/">StataList</a></li>
+          <li><a href="https://stats.stackexchange.com/">Cross Validated</a></li>
+          <li><a href="https://stackoverflow.com/questions/tagged/stata">Stack Overflow ("Stata" tag)</a></li>
+          <li><a href="http://www.ats.ucla.edu/stat/mult_pkg/whatstat/">What statistical test should I use?</a></li>
+          <li><a href="http://www.cpc.unc.edu/research/tools/data_analysis/statatutorial">Introduction to Stata</a></li>
+        </ul>
+       </dd>
+    </dl>
+  </div>
 
-  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla reiciendis commodi temporibus iure repellat magni maxime quaerat quam neque! Sequi, laborum aspernatur expedita quisquam similique voluptatum ea possimus, reiciendis qui.</p>
+  <div class="container">
+    <h2 id="d3js"><small>d3.js</small></h2>
+      <p>Ever admired a beautiful infographic on <a href="http://www.nytimes.com/interactive/2012/10/15/us/politics/swing-history.html?_r=0">The New York Times</a> or <a href="http://projects.fivethirtyeight.com/flights/">FiveThirtyEight</a>? It was probably built in <a href="http://d3js.org/">d3.js</a>. d3.js is a JavaScript library that binds data onto HTML elements. It takes almost any sort of data, and can make almost any sort of graph - you just need some JavaScript coding skills and imagination. It helps to be familiar with HTML/CSS and JavaScript before getting started; but some d3.js tutorials assume no prior knowledge.</p>
+          <dl class="dl-horizontal">
+            <dt>F(AF)L</dt>
+            <dd>None yet. <small><a href="https://docs.google.com/forms/d/1Vsx1EvhnqYviZv8eEVTAOf-Fdm0wxuKjoKqXgY3iNUU/viewform?usp=send_form">Interested in teaching?</a></small></dd>
+            <dt>Example code</dt>
+            <dd>
+              <pre>d3.selectAll("circle")
+                     .data(data)
+                     .enter()
+                     .append("circle")
+                        .attr("cx", function(d) { return d.year; })
+                        .attr("cy", function(d) { return d.income; })
+                        .attr("r", function(d) { return d.population; })
+                        .attr("color", "red");
+                        </pre>
+            </dd>
+            <dt>Who uses this?</dt>
+            <dd><a href="http://epod.cid.harvard.edu/people/eric-dodge">Eric</a>, <a href="http://angelaambroz.com/sketchbook/sketches.html">Angela</a></dd>
+            <dt>What's it useful for?</dt>
+            <dd>Generating interactive, online data visualizations of nearly any type (maps, charts, etc).</dd>
+            <dt>Resources</dt>
+            <dd>
+              <ul class="list-unstyled">
+              <li><a href="https://www.udacity.com/course/data-visualization-and-d3js--ud507">Data visualization and D3.js</a></li>
+              <li><a href="http://alignedleft.com/tutorials/d3/">Scott Murray's tutorials</a></li>
+              <li><a href="https://github.com/mbostock/d3/wiki">Official documentation</a></li>
+              </ul>
+             </dd>
+    </dl>
+  </div>
+
+  <div class="container">
+    <h2 id="css"><small>HTML/CSS</small></h2>
+    <p>Want to build a website? Or just a gorgeous infographic in d3.js? You should probably learn some basic HTML/CSS.</p>
+    <dl class="dl-horizontal">
+      <dt>F(AF)L</dt>
+        <dd>None yet. <small><a href="https://docs.google.com/forms/d/1Vsx1EvhnqYviZv8eEVTAOf-Fdm0wxuKjoKqXgY3iNUU/viewform?usp=send_form">Interested in teaching?</a></small></dd>
+      <dt>Example code</dt>
+      <dd>
+        <pre>&lt;style&gt;
+  p {
+    font: 300 78px Helvetica;
+  }
+&lt;/style&gt;
+
+&lt;body&gt;
+&lt;p&gt; Hello, world! This is my first webpage.&lt;/p&gt;
+&lt;/body&gt;</pre>
+      </dd>
+      <dt>Resources</dt>
+      <dd>
+        <ul class="list-unstyled">
+          <li><a href="http://learn.shayhowe.com/html-css/">Learn to Code HTML and CSS</a></li>
+          <li><a href="http://learnlayout.com/">Learn CSS Layout</a></li>
+          <li><a href="http://www.impressivewebs.com/css-terms-definitions/">CSS Terms and Definitions</a></li>
+          <li><a href="http://www.w3schools.com/">w3 Schools</a></li>
+          <li><a href="https://www.codecademy.com/tracks/web">HTML and CSS (Codecademy)</a></li>
+        </ul>
+      </dd>
+    </dl>
   </div>
 
   <div class="container">
   <h2 id="phd"><small>PhD applications</small></h2>
-      <ul class="list-inline">
-    <li><mark>lecture slides (coming soon)</mark></li>
-    <li><mark>example code (coming soon)</mark></li>
-  </ul>
   	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, minima, impedit. Quibusdam, officia, fugit! Eius eligendi iure quasi praesentium quas corrupti veniam, quae eos, eaque, pariatur et delectus, explicabo temporibus.</p>
   </div>
+
 
 </body>
 </html>
