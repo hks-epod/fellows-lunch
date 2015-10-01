@@ -16,7 +16,7 @@
 
 <header class="bgimage">
   <div class="container welcome">
-  <section class="col-sm-6">
+  <p><a href="http://www.kodingmadesimple.com/2015/01/twitter-bootstrap-jumbotron-tutorial-with-examples.html"></a></p>
   </div>
 </header>  
 
@@ -41,7 +41,8 @@
 
     <!-- Main navbar, LHS -->
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">About <span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="index.html">Home</a> <span class="sr-only">(current)</span></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="calendar.html">Calendar of events</a></li>
         <li><a href="map.html">How to find us</a></li>
         <li class="dropdown">
@@ -49,7 +50,7 @@
         <ul class="dropdown-menu">
           <li><a href="https://docs.google.com/forms/d/1Vsx1EvhnqYviZv8eEVTAOf-Fdm0wxuKjoKqXgY3iNUU/viewform?usp=send_form" target="_blank">I want to teach something.</a></li>
           <li><a href="https://docs.google.com/forms/d/1eb2xAQyxroDYJJsJ55U1RETarnZYJowmCHjGPWEZaEg/viewform?usp=send_form" target="_blank">I want to learn something.</a></li>
-          <li><a href="mailto:angela_ambroz@hks.harvard.edu">I want to give feedback on a F(AF)L.</a></li>
+          <li><a href="mailto:angela_ambroz@hks.harvard.edu?body=FAFL%20session%20attended%3A%0ATopic%20learned%3A%0AFeedback%3A%20">I want to give feedback on a F(AF)L.</a></li>
         </ul>
         </li>
         <li class="dropdown">
@@ -72,44 +73,29 @@
 </nav>
 <!-- /Navbar -->
   
-  <!-- Funny xomix -->
   <div class="container">
   <div class="row">
-    
 
     <section class="col-sm-6">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Dar_es_Salaam_Airport.jpg"
-        alt="DSM airport" class="img-rounded img-responsive center-block" width="400px">
-      <h3>DSM</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus consequuntur earum omnis velit odit quas maxime. Vero distinctio adipisci fugit numquam, reprehenderit architecto dolores. Culpa asperiores nam quia quisquam suscipit!</p>
+    <h1>Hi.</h1>
+    <p class="lead">Welcome! This is a website for <a href="http://epod.cid.harvard.edu/research-fellows">EPoD Fellows</a> and their <abbr title="/kiTH/ (n.) one's friends, acquaintances, and relations.">kith</abbr> throughout the Boston area. We're a group of young researchers working on empirical research for international development. This is where we learn new things.</p>
     </section>
 
-        <section class="col-sm-6">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Departure_terminal_of_manchester-boston_regional_airport.jpg"
-        alt="BOS airport" class="img-circle img-responsive center-block" width="400px">
-      <h3>BOS</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus consequuntur earum omnis velit odit quas maxime. Vero distinctio adipisci fugit numquam, reprehenderit architecto dolores. Culpa asperiores nam quia quisquam suscipit!</p>
+    <section class="col-sm-6">
+      <img src="images/xkcd.png"
+        alt="xkcd comic" class="img-responsive center-block" width="400px">
+    <p><small>Source: <a href="https://xkcd.com/1205/" target="_blank">xkcd, 1205</a></small></p>
     </section>
 
   </div>
   </div>
-
-<!-- <div class="container-fluid"> -->
-<div class="container">
-	<p class="lead">Hi. This is going to be the website for the <abbr title="Evidence for Policy Design" class="initialism"><a href="http://epod.cid.harvard.edu/" target="_blank">EPoD</a></abbr> Research Fellows (and Friends) Lunch. Check back soon - and you'll see more stuff than just a <a href="http://calmingmanatee.com/">Calming Manatee</a>.</p>
-
-  <p>We're on GitHub! Interested in tinkering with this site? Clone the files to your computer and get coding! Open <code><a href="http://www.wikihow.com/Get-to-the-Command-Line-on-a-Mac">Terminal</a></code> (OSX) or <code><a href="http://mikefrobbins.com/2015/01/01/where-to-find-and-how-to-launch-powershell/">PowerShell</a></code> (Windows), navigate to wherever you want to put it (<code>cd [some file path]</code>) and type:</p>
-  <pre>git clone http://github.com/hks-epod/fellows-lunch</pre>
-  <p>Voila.</p>
-</div>
-
 
 <div class="container">
   <div class="row">
-    <section class="col-xs-12">
 
+  <section class="col-md-12">
     <h3>Events</h3>
-    <p>For the full calendar, <a href="#">click here</a>.</p>
+    <p>For the full calendar, <a href="calendar.html">click here</a>.</p>
 
       <table class="table table-striped">
         <thead>
@@ -121,28 +107,29 @@
         </thead>
         <tbody>
           <tr>
-            <th scope="row">EPoD/Growth Lab Lunch</th>
+            <th scope="row">F(AF)L</th>
             <td>monthly</td>
-            <td>This will be a hands-on technical workshop with our neighbors upstairs, <a href="http://www.hks.harvard.edu/centers/cid/programs/growth-lab" target="_blank">The Growth Lab</a>. Each month, alternating, we present a paper from our field (1 hour) and then do a practical exercise together (1 hour). Practical exercises might include: replicating analyses, creating data visualizations or maps, and so on. We'll replicate analyses, such as <var>x = y</var>.</td>
-          </tr>
-          <tr>
-            <th scope="row">F(AF)T</th>
-            <td>monthly</td>
-            <td>Fellows (and Friends) Tea. Come one, come all! A randomista get-together, for people working across our organizations: J-PAL, IPA, EPoD, HKS, HBS, other acronyms. More informal. More casual. More manatees. We'll learn stuff like what is a <code>for</code> loop in Python look like, or what the <code>&lt;em&gt;</code> is. We'll also learn about the efficiency of <kbd>CTRL+C</kbd> and other keyboard shortcuts.</td>
+            <td>Fellows (and Friends) Learn. Come one, come all! A junior empiricist get-together, for people working across our organizations: J-PAL, IPA, EPoD, HKS, HBS, other acronyms. This will be a hands-on, informal workshop where can learn new skills. Followed by happy hour.</td>
           </tr>
           <tr>
             <th scope="row">MIT-Harvard Development Seminar</th>
             <td>weekly</td>
-            <td>Harvard in the fall, MIT in the spring. <a href="http://economics.mit.edu/events/Dev-Environ">Link.</a></td>
+            <td>Held at Harvard in the fall, MIT in the spring. For the full schedule, <a href="http://economics.mit.edu/events/Dev-Environ">see here</a>.</td>
           </tr>
           <tr>
         </tbody>
       </table>
-      
+  </section>
 
-    </section>
+  <section class="col-md-12">
+    <h3>Send a pull request</h3>
+      <p>We're on GitHub! Interested in tinkering with this site? Clone the files to your computer and get coding! Open <code><a href="http://www.wikihow.com/Get-to-the-Command-Line-on-a-Mac">Terminal</a></code> (OSX) or <code><a href="http://mikefrobbins.com/2015/01/01/where-to-find-and-how-to-launch-powershell/">PowerShell</a></code> (Windows), navigate to wherever you want to put it (<code>cd [some file path]</code>) and type:</p>
+      <pre>git clone http://github.com/hks-epod/fellows-lunch</pre>
+  </section>
+
   </div><!-- row -->   
 </div><!-- content container -->
+
 
 
 

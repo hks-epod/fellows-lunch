@@ -42,7 +42,8 @@
 
     <!-- Main navbar, LHS -->
       <ul class="nav navbar-nav">
-        <li><a href="about.html">About <span class="sr-only">(current)</span></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="calendar.html">Calendar of events</a></li>
         <li><a href="map.html">How to find us</a></li>
         <li class="dropdown">
@@ -50,11 +51,11 @@
         <ul class="dropdown-menu">
           <li><a href="https://docs.google.com/forms/d/1Vsx1EvhnqYviZv8eEVTAOf-Fdm0wxuKjoKqXgY3iNUU/viewform?usp=send_form" target="_blank">I want to teach something.</a></li>
           <li><a href="https://docs.google.com/forms/d/1eb2xAQyxroDYJJsJ55U1RETarnZYJowmCHjGPWEZaEg/viewform?usp=send_form" target="_blank">I want to learn something.</a></li>
-          <li><a href="mailto:angela_ambroz@hks.harvard.edu">I want to give feedback on a F(AF)L.</a></li>
+          <li><a href="mailto:angela_ambroz@hks.harvard.edu?body=FAFL%20session%20attended%3A%0ATopic%20learned%3A%0AFeedback%3A%20">I want to give feedback on a F(AF)L.</a></li>
         </ul>
         </li>
         <li class="dropdown active">
-          <a href="resources.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources to learn more <span class="caret"></span></a>
+          <a href="resources.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources to learn more <span class="caret"></span><span class="sr-only">(current)</span></a>
           <ul class="dropdown-menu">
             <li><a href="resources.html#python">Python</a></li>
             <li><a href="resources.html#gis">GIS</a></li>
@@ -75,23 +76,24 @@
 
 
 <div class="container">
-	<h1>Ready to learn more?</h1>
-</div>
+<div class="row">
+  <section class="col-md-10">
+    <p class="lead">Ready to learn more?</p>
+    <p>Great! Most of the things we'll talk about aren't really something you can master in a one-hour session, no matter how hands-on things get. But we hope to teach you enough to demystify the concept and get you independent enough to learn the rest yourself.</p>
+    <p>Below are some of the topics we'll be covering. Something missing? <a href="https://docs.google.com/forms/d/1eb2xAQyxroDYJJsJ55U1RETarnZYJowmCHjGPWEZaEg/viewform">Tell us.</a></p>
 
-<div class="container">
-  <a href="#python" class="btn btn-default btn-lg active" role="button">Python</a>
-  <a href="#gis" class="btn btn-default btn-lg" role="button">GIS</a>
-  <a href="#git" class="btn btn-default btn-lg" role="button">git/GitHub</a>
-  <a href="#css" class="btn btn-default btn-lg" role="button">HTML/CSS</a>
-  <a href="#d3js" class="btn btn-default btn-lg" role="button">d3.js</a>
-  <a href="#stata" class="btn btn-default btn-lg" role="button">Stata</a>
-  <a href="#phd" class="btn btn-default btn-lg" role="button">PhD apps</a>
-  <a href="#api" class="btn btn-default btn-lg" role="button">APIs</a>
-  </div>
+    <a href="#python" class="btn btn-default btn-lg btn-link" role="button">Python</a>
+    <a href="#gis" class="btn btn-default btn-lg btn-link" role="button">GIS</a>
+    <a href="#git" class="btn btn-default btn-lg btn-link" role="button">git/GitHub</a>
+    <a href="#css" class="btn btn-default btn-lg btn-link" role="button">HTML/CSS</a>
+    <a href="#d3js" class="btn btn-default btn-lg btn-link" role="button">d3.js</a>
+    <a href="#stata" class="btn btn-default btn-lg btn-link" role="button">Stata</a>
+    <a href="#phd" class="btn btn-default btn-lg btn-link" role="button">PhD apps</a>
+    <a href="#api" class="btn btn-default btn-lg btn-link" role="button">APIs</a>
+  </section>
 
-
-  <div class="container">
-  <div><h1 id="python"><small>Python</small></h1></div>
+  <section class="col-md-10">
+  <h2 id="python"><small>Python</small></h2>
   	<p>Python is a popular, multi-purpose programming language. Its light, simple style makes it great for beginners, and its <a href="https://wiki.python.org/moin/UsefulModules">giant ecosystem of libraries</a> makes it the true digital multi-tool. Use it to scrape websites, analyze GIS data, run regressions, edit audio/video, paint, and more.</p>
         <dl class="dl-horizontal">
       <dt>F(AF)L</dt>
@@ -116,18 +118,18 @@
         <li><a href="http://www.newcoder.io/">newCoder.io</a></li>
       </ul></dd>
     </dl>
-  </div>
+  </section>
 
-  <div class="container">
+  <section class="col-md-10">
   <h2 id="gis"><small>GIS</small></h2>
   	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, minima, impedit. Quibusdam, officia, fugit! Eius eligendi iure quasi praesentium quas corrupti veniam, quae eos, eaque, pariatur et delectus, explicabo temporibus.</p>
   	
   	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla reiciendis commodi temporibus iure repellat magni maxime quaerat quam neque! Sequi, laborum aspernatur expedita quisquam similique voluptatum ea possimus, reiciendis qui.</p>
 
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla reiciendis commodi temporibus iure repellat magni maxime quaerat quam neque! Sequi, laborum aspernatur expedita quisquam similique voluptatum ea possimus, reiciendis qui.</p>
-  </div>  
+  </section> 
 
-  <div class="container">
+  <section class="col-md-10">
   <h2 id="git"><small>Git and GitHub</small></h2>
   	<p><code>git</code> is a very simple programming language for version control, run from the command line. <a href="https://github.com/">GitHub</a> is a popular website where you can use <code>git</code> to collaborate with others on code-based projects. It's basically <code>git</code> + the internet. Your code is hosted in online repositories ("repos") which can be public (free) or private (not free). You normally don't store data, Word documents, or other stuff on GitHub. It works best with plain text files.</p> 
     <dl class="dl-horizontal">
@@ -150,9 +152,9 @@
         <li><a href="https://www.udacity.com/course/how-to-use-git-and-github--ud775">How to use git and GitHub (short online course)</a></li>
       </ul></dd>
     </dl>
-  </div>
+  </section>
 
-  <div class="container">
+  <section class="col-md-10">
   <h2 id="stata"><small>Stata</small></h2>
   	   <p>Our bread and butter.</p> 
     <dl class="dl-horizontal">
@@ -169,9 +171,9 @@
         </ul>
        </dd>
     </dl>
-  </div>
+  </section>
 
-  <div class="container">
+  <section class="col-md-10">
     <h2 id="d3js"><small>d3.js</small></h2>
       <p>Ever admired a beautiful infographic on <a href="http://www.nytimes.com/interactive/2012/10/15/us/politics/swing-history.html?_r=0">The New York Times</a> or <a href="http://projects.fivethirtyeight.com/flights/">FiveThirtyEight</a>? It was probably built in <a href="http://d3js.org/">d3.js</a>. d3.js is a JavaScript library that binds data onto HTML elements. It takes almost any sort of data, and can make almost any sort of graph - you just need some JavaScript coding skills and imagination. It helps to be familiar with HTML/CSS and JavaScript before getting started; but some d3.js tutorials assume no prior knowledge.</p>
           <dl class="dl-horizontal">
@@ -180,17 +182,17 @@
             <dt>Example code</dt>
             <dd>
               <pre>d3.selectAll("circle")
-                     .data(data)
-                     .enter()
-                     .append("circle")
-                        .attr("cx", function(d) { return d.year; })
-                        .attr("cy", function(d) { return d.income; })
-                        .attr("r", function(d) { return d.population; })
-                        .attr("color", "red");
+  .data(data)
+  .enter()
+  .append("circle")
+    .attr("cx", function(d) { return d.year; })
+    .attr("cy", function(d) { return d.income; })
+    .attr("r", function(d) { return d.population; })
+    .attr("color", "red");
                         </pre>
             </dd>
             <dt>Who uses this?</dt>
-            <dd><a href="http://epod.cid.harvard.edu/people/eric-dodge">Eric</a>, <a href="http://angelaambroz.com/sketchbook/sketches.html">Angela</a></dd>
+            <dd><a href="http://epod.cid.harvard.edu/people/eric-dodge">Eric</a>, <a href="http://angelaambroz.com/sketchbook/sketches.html">Angela</a>, <a href="epod.cid.harvard.edu/people/mehmet-seflek">Mehmet</a></dd>
             <dt>What's it useful for?</dt>
             <dd>Generating interactive, online data visualizations of nearly any type (maps, charts, etc).</dd>
             <dt>Resources</dt>
@@ -202,9 +204,9 @@
               </ul>
              </dd>
     </dl>
-  </div>
+  </section>
 
-  <div class="container">
+  <section class="col-md-10">
     <h2 id="css"><small>HTML/CSS</small></h2>
     <p>Want to build a website? Or just a gorgeous infographic in d3.js? You should probably learn some basic HTML/CSS.</p>
     <dl class="dl-horizontal">
@@ -233,12 +235,13 @@
         </ul>
       </dd>
     </dl>
-  </div>
+  </section>
 
-  <div class="container">
+  <section class="col-md-10">
   <h2 id="phd"><small>PhD applications</small></h2>
   	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, minima, impedit. Quibusdam, officia, fugit! Eius eligendi iure quasi praesentium quas corrupti veniam, quae eos, eaque, pariatur et delectus, explicabo temporibus.</p>
   </div>
+  </section>
 
 
 <!-- Google Analytics tracking -->
