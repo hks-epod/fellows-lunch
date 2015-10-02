@@ -64,6 +64,8 @@
             <li><a href="resources.html#stata">Stata</a></li>
             <li><a href="resources.html#phd">Applying for a PhD</a></li>
             <li><a href="resources.html#api">APIs</a></li>
+            <li><a href="resources.html#latex">LaTeX</a></li>
+            <li><a href="resources.html#sql">SQL</a></li>
             <li><a href="https://www.khanacademy.org/coach-res/reference-for-coaches/how-to/v/you-can-learn-anything" target="_blank">I just need a pep talk</a></li>
           </ul>
         </li>
@@ -90,6 +92,8 @@
     <a href="#stata" class="btn btn-default btn-lg btn-link" role="button">Stata</a>
     <a href="#phd" class="btn btn-default btn-lg btn-link" role="button">PhD apps</a>
     <a href="#api" class="btn btn-default btn-lg btn-link" role="button">APIs</a>
+    <a href="#latex" class="btn btn-default btn-lg btn-link" role="button">LaTeX</a>
+    <a href="#sql" class="btn btn-default btn-lg btn-link" role="button">SQL</a>
   </section>
 
   <section class="col-md-10">
@@ -140,7 +144,7 @@
         <pre>git commit -m "This is my first commit."</pre>
         </dd>
       <dt>Who uses this?</dt>
-      <dd><a href="https://github.com/angelaambroz">Angela</a>, <a href="https://github.com/NilsEnevoldsen">Nils</a>, <a href="https://github.com/edodge">Eric</a>, <a href="https://github.com/boyercb">Chris</a></dd>
+      <dd><a href="https://github.com/angelaambroz">Angela</a>, <a href="https://github.com/NilsEnevoldsen">Nils</a>, <a href="https://github.com/edodge">Eric</a>, <a href="https://github.com/boyercb">Chris</a>, <a href="http://www.povertyactionlab.org/loza">Francine</a></dd>
       <dt>What's it useful for?</dt>
       <dd>Collaborating on .do files, or any other plain text/coding files (.html, .py, .js). There is tell of a <a href="http://stackoverflow.com/a/6190412"><code>git</code> + LaTeX workflow</a>.</dd>
       <dt>Tutorials</dt>
@@ -247,8 +251,77 @@
       <li><a href="https://chrisblattman.com/2008/03/01/which-is-for-you-mpa-mpaid-or-phd/" target="_blank">Which is for you: MPA, MPA/ID, or PhD?</a> <small>and a 2013 <a href="http://chrisblattman.com/2013/10/04/what-ma-mpa-or-mia-program-is-for-you/" target="_blank">update</a></small></li>
     </ul>
     <p>Otherwise, relax with <a href="http://phdcomics.com/comics.php">PhD comics</a>.</p>
-  </div>
   </section>
+
+    <section class="col-md-10">
+  <h2 id="latex"><small>LaTeX</small></h2>
+    <p>A typesetting software very much <em>not</em> <abbr title="What You See Is What You Get">WYSIWYG</abbr>. It integrates well with <a href="#stata">Stata</a> and has become the standard writing tool for drafting academic articles.</p>
+         <dl class="dl-horizontal">
+            <dt>F(AF)L</dt>
+              <dd>None yet. <small><a href="https://docs.google.com/forms/d/1Vsx1EvhnqYviZv8eEVTAOf-Fdm0wxuKjoKqXgY3iNUU/viewform?usp=send_form">Interested in teaching?</a></small></dd>
+            <dt>Example code</dt>
+            <dd>
+              <pre>\documentclass{article}
+\usepackage{amsmath}
+\usepackage{doublespace}
+
+\title{My first \LaTeX{} document}
+\author{Me!\thanks{%
+Starfleet Academy, San Francisco, CA. 
+\textit{E-mail}: some.email@aol.com}}
+\date{December 2213}
+
+\begin{document}
+\maketitle
+I have discovered something very interesting:
+\begin{equation}
+\sum_(i=1)^(N)x_(i)=n\cdot\bar{x}
+\end{equation}
+\end{document}</pre>
+            </dd>
+            <dt>Who uses this?</dt>
+            <dd><a href="http://www.povertyactionlab.org/loza">Francine</a></dd>
+            <dt>Resources</dt>
+            <dd>
+              <ul class="list-unstyled">
+                <li><a href="http://www.latex-tutorial.com/">LaTeX-tutorial.com</a></li>
+                <li><a href="https://www.tug.org/twg/mactex/tutorials/ltxprimer-1.0.pdf">LaTeX Tutorials: A primer</a></li>
+                <li><a href="http://www.cs.cornell.edu/info/misc/latex-tutorial/latex-home.html">Beginning LaTeX</a></li>
+                <li><a href="http://mrskrummel.com/tutorials.html">Mrs. Krummel's Getting started with LaTeX</a></li>
+              </ul>
+            </dd>
+          </dl>
+  </section>
+
+
+    <section class="col-md-10">
+  <h2 id="sql"><small>SQL</small></h2>
+    <p>When dealing with relational databases, you use <a href="https://en.wikipedia.org/wiki/SQL">SQL</a> (Structured Query Language, pronounced "sequel") to manage the data. In general, it's probably a good idea to get experience with different types of data: for example, <a href="https://en.wikipedia.org/wiki/XML">XML</a> and <a href="https://en.wikipedia.org/wiki/JSON">JSON</a> data.</p>
+         <dl class="dl-horizontal">
+            <dt>F(AF)L</dt>
+              <dd>None yet. <small><a href="https://docs.google.com/forms/d/1Vsx1EvhnqYviZv8eEVTAOf-Fdm0wxuKjoKqXgY3iNUU/viewform?usp=send_form">Interested in teaching?</a></small></dd>
+            <dt>Example code</dt>
+            <dd>
+              <pre>SELECT avg(cast(mintempi as integer))
+    FROM weather_data
+    WHERE cast(rain as integer)=1 AND cast(mintempi as integer)>55</pre>
+            </dd>
+            <dt>Who uses this?</dt>
+            <dd><a href="http://www.povertyactionlab.org/loza">Francine</a></dd>
+            <dt>Resources</dt>
+            <dd>
+              <ul class="list-unstyled">
+                <li><a href="https://www.udacity.com/course/intro-to-relational-databases--ud197">Introduction to relational databases</a></li>
+                <li><a href="https://lagunita.stanford.edu/courses/DB/2014/SelfPaced/about">A series of online courses by Stanford on databases</a></li>
+              </ul>
+            </dd>
+          </dl>
+  </section>
+
+
+  </div> <!-- row -->
+  </div> <!-- container -->
+
 
 <!-- Google Analytics tracking -->
 <script>
