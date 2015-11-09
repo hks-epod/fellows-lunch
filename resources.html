@@ -104,7 +104,7 @@
   	<p>Python is a popular, multi-purpose programming language. Its light, simple style makes it great for beginners, and its <a href="https://wiki.python.org/moin/UsefulModules">giant ecosystem of libraries</a> makes it the true digital multi-tool. Use it to scrape websites, analyze GIS data, run regressions, edit audio/video, paint, and more.</p>
         <dl class="dl-horizontal">
       <dt>F(AF)L</dt>
-      <dd><mark>Web scraping in Python - <b>date TBD</b>.</mark></dd>
+      <dd><mark>Web scraping in Python - <b>Friday, Nov 13, 2015</b>.</mark></dd>
       <dt>Lecture slides</dt>
       <dd><a href="files/Python_Angela_NH2015.pdf">Intro to Python</a> (.pdf), more coming soon</dd>
       <dt>Example code</dt>
@@ -114,9 +114,9 @@
         <li><a href="files/Python_goodies_NH2015.zip">Bundle of example programs</a> (.zip), more coming soon</li>
       </ul></dd>
       <dt>Who uses this?</dt>
-      <dd><a href="https://github.com/angelaambroz">Angela</a>, <a href="https://github.com/edodge">Eric</a>, <a href="http://www.povertyactionlab.org/loza">Francine</a>, <a href="http://epod.cid.harvard.edu/people/mehmet-seflek">Mehmet</a></dd>
+      <dd><a href="https://github.com/angelaambroz">Angela</a>, <a href="https://github.com/edodge">Eric</a>, <a href="http://www.povertyactionlab.org/loza">Francine</a>, <a href="http://epod.cid.harvard.edu/people/mehmet-seflek">Mehmet</a>, <a href="http://epod.cid.harvard.edu/people/louise-paul-delvaux">Louise</a></dd>
       <dt>What's it useful for?</dt>
-      <dd>Data cleaning and analysis (<a href="http://pandas.pydata.org/">pandas</a>, <a href="http://statsmodels.sourceforge.net/">statsmodels</a>, <a href="http://www.numpy.org/">numpy</a>). Automating repretitive tasks on your computer. Scraping the internet (<a href="http://www.crummy.com/software/BeautifulSoup/bs4/doc/">BeautifulSoup</a>), using APIs (<a href="http://docs.python-requests.org/en/latest/">requests</a>).</dd>
+        <dd>Data cleaning and analysis (<a href="http://pandas.pydata.org/">pandas</a>, <a href="http://statsmodels.sourceforge.net/">statsmodels</a>, <a href="http://www.numpy.org/">numpy</a>). Automating repretitive tasks on your computer. Scraping the internet (<a href="http://www.crummy.com/software/BeautifulSoup/bs4/doc/">BeautifulSoup</a>), using APIs (<a href="http://docs.python-requests.org/en/latest/">requests</a>).</dd>
       <dt>Tutorials</dt>
       <dd><ul class="list-unstyled">
         <li><a href="https://www.udacity.com/course/programming-foundations-with-python--ud036">Programming Foundations with Python</a></li>
@@ -147,6 +147,7 @@
         <li><a href="http://docs.qgis.org/2.2/en/docs/training_manual/">QGIS training manual</a></li>
         <li><a href="https://gis.stackexchange.com/questions/17227/free-gis-workshops-tutorials-and-applied-learning-material">A big list of tutorials/resources from the GIS StackExchange</a></li>
         <li><a href="http://gis.harvard.edu/tools/software/arcgis-online">Harvard's Center for Geographic Analysis</a></li>
+        <li><a href="http://www.iq.harvard.edu/calendar">Workshops at the Institute for Quantitative Social Sciences (Harvard)</a></li>
       </ul>
     </dd>
     </dl>
@@ -331,7 +332,7 @@ I have discovered something very interesting:
     WHERE cast(rain as integer)=1 AND cast(mintempi as integer)>55</pre>
             </dd>
             <dt>Who uses this?</dt>
-            <dd><a href="http://www.povertyactionlab.org/loza">Francine</a></dd>
+            <dd><a href="http://www.povertyactionlab.org/loza">Francine</a>, <a href="https://github.com/edodge">Eric</a></dd>
             <dt>Resources</dt>
             <dd>
               <ul class="list-unstyled">
@@ -350,11 +351,18 @@ I have discovered something very interesting:
               <dd>None yet. <small><a href="https://docs.google.com/forms/d/1Vsx1EvhnqYviZv8eEVTAOf-Fdm0wxuKjoKqXgY3iNUU/viewform?usp=send_form">Interested in teaching?</a></small></dd>
             <dt>Example code</dt>
             <dd>
-            <!-- TODO -->
-              <pre></pre>
+              <pre>
+df <- read.csv("nameofthedatafile.csv")
+df$column1
+median(df$column1)
+mean(df$column1, na.rm=TRUE)
+sd(df$column1, na.rm=TRUE)
+summary(df$colum1)
+mysortedf <- df[order(df$column1),]
+reg1 <- lm(y ~ v + w + (x*z), df)</pre>
             </dd>
             <dt>Who uses this?</dt>
-            <dd><a href="https://github.com/boyercb">Chris</a></dd>
+            <dd><a href="https://github.com/boyercb">Chris</a>, <a href="http://epod.cid.harvard.edu/people/louise-paul-delvaux">Louise</a></dd>
             <dt>Resources</dt>
             <dd>
               <ul class="list-unstyled">
@@ -365,6 +373,8 @@ I have discovered something very interesting:
                 <li><a href="http://www.ats.ucla.edu/stat/r/">(More) resources to help you learn and use R</a></li>
                 <li><a href="https://rpubs.com/">RPubs</a></li>
                 <li><a href="http://www.twotorials.com/">TwoTutorials</a></li>
+                <li><a href="http://www.iq.harvard.edu/calendar">Workshops at the Institute for Quantitative Social Sciences (Harvard)</a></li>
+                <li><a href="http://shiny.rstudio.com/gallery/">"Shiny" gallery of data visualizations in R</a></li>
               </ul>
             </dd>
           </dl>
